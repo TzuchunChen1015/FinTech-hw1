@@ -91,6 +91,7 @@ if __name__=='__main__':
                 returnRate = computeReturnRate(adjClose, emaShort, emaLong, ersiShort, ersiLong, kdAlpha / 100, overBuy / 100, overSell / 100)
                 if returnRate > returnRateBest:
                   returnRateBest = returnRate
+                  print("Best RR:%f" %(returnRateBest))
                   emaShortBest = emaShort
                   emaLongBest = emaLong
                   ersiShortBest = ersiShort

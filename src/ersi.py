@@ -31,5 +31,5 @@ def CalculateERSI(pastPriceVec, currentPrice, windowSize):
       elif diffPriceVec[idx] < 0:
         neg = (1 - 1 / windowSize) * neg - (1 / windowSize) * diffPriceVec[idx]
         pos = (1 - 1 / windowSize) * pos
-    ris = pos / (pos + neg)
+    rsi = pos / (pos + neg)
     return rsi

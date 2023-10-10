@@ -6,7 +6,7 @@ def CalculateKD(pastPriceVec, currentPrice, KDalpha):
     maxPrice = np.max(np.append(pastPriceVec, currentPrice))
     minPrice = np.min(np.append(pastPriceVec, currentPrice))
     if maxPrice == minPrice:
-      return 50, 50
+      return 0.5, 0.5
     else:
       rsv = (currentPrice - minPrice) / (maxPrice - minPrice)
       return rsv, rsv
